@@ -1,0 +1,27 @@
+---
+import { getLocalPlaceReviews } from "google-reviews-scraping";
+
+const reviewsData = await getLocalPlaceReviews({
+  placeUrl:
+    "https://www.google.com/maps/search/?api=1&query=220+Miracle+Mile+Coral+Gables+FL+33134",
+  options: {
+    navigationTimeout: 7000, // Optional
+    lastCursor: "[CURSOR]", // Optional
+  },
+});
+
+console.log(reviewsData);
+---
+
+<section class="w-full py-10">
+  <div class="flex flex-col items-center justify-center space-y-5">
+    <h1 class="text-pink-500 text-center text-3xl font-semibold">
+      What customers says?
+    </h1>
+    <div
+      data-wally-widget="662fd7dd4fde9a0015c0ae53"
+      style="width: 100%; height: 100%;"
+    >
+    </div>
+  </div>
+</section>

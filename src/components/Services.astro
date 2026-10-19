@@ -1,0 +1,133 @@
+---
+import bg_services from "../images/bg_services2.webp";
+import experience_ico from "../images/icons/experience.svg";
+import customers from "../images/icons/customers.svg";
+import designs from "../images/icons/designs1.svg";
+import service2 from "../images/services4.webp";
+import service1 from "../images/services1.webp";
+import servicecard from "../images/servicescard.webp";
+import { fade } from "astro:transitions";
+---
+
+<section
+  id="services"
+  class="relative w-full flex h-full flex-col items-center justify-center">
+  <img
+    src={bg_services.src}
+    alt="Tipsy Nails services"
+    class="absolute h-full w-full object-cover opacity-20"
+  />
+  <div
+    data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom"
+    class="relative bg-white flex lg:flex-row flex-col items-center justify-between text-center p-8 w-full lg:w-3/5 lg:rounded-3xl shadow-md lg:-mt-20 max-w-[920px]">
+    <div
+      class="flex flex-col items-center justify-center space-y-2 lg:w-1/3 p-2">
+      <img src={experience_ico.src} alt="experience icon" class="h-10" />
+      <span class="text-pink-500 text-lg font-semibold"
+        >+10 YEARS OF EXPERIENCE</span
+      >
+    </div>
+    <div
+      class="flex flex-col items-center justify-center lg:border-y-0 space-y-2 py-2 lg:border-x-2 border-y-2 border-pink-400 lg:w-1/3 mb-2 lg:mb-0">
+      <img src={customers.src} alt="customers icon" class="h-10" />
+      <span class="text-pink-500 text-lg font-semibold"
+        >100% SATISFIED CUSTOMERS</span
+      >
+    </div>
+    <div
+      class="flex flex-col items-center justify-center space-y-2 lg:w-1/3 p-2">
+      <img src={designs.src} alt="customers icon" class="h-10" />
+      <span class="text-pink-500 text-lg font-semibold"
+        >UNIQUE AND BOLD DESIGNS</span
+      >
+    </div>
+  </div>
+
+  <div
+    class="relative flex flex-col gap-10 md:gap-20 items-center text-justify justify-center w-full lg:w-3/5 pb-16 max-w-[920px]">
+    <h1
+      data-aos="fade-down"
+      data-aos-anchor-placement="center-bottom"
+      class="text-3xl text-pink-500 font-semibold lg:mt-20 mt-8">
+      We offer the best SPA services
+    </h1>
+    <div
+      data-aos="fade-right"
+      data-aos-anchor-placement="center-bottom"
+      class="flex flex-col lg:flex-row justify-between gap-4">
+      <img src={service2.src} alt="manicure services" class="p-2 h-full" />
+      <div
+        class="relative flex flex-col space-y-2 justify-center items-center lg:items-start px-10">
+        <h1 class="text-2xl font-semibold text-pink-500">
+          SPA Manicure y Pedicure
+        </h1>
+        <p class="text-gray-600 font-medium text-xl">
+          Ready to dazzle with your hands? At Tipsy Nails, we offer a space
+          where creativity and personal care come together to bring your hands
+          to life. Come and explore a wide range of services and the latest
+          colors with the most daring designs. Don't wait any longer, book your
+          appointment today and get ready to turn heads!
+        </p>
+        <a
+          href="#contact">
+          <button
+            class="text-pink-500 p-2 border-2 border-pink-500 w-36 rounded-2xl text-lg font-semibold hover:scale-105 hover:text-white hover:bg-pink-500 transition"
+            >Book Now</button
+          >
+        </a>
+      </div>
+    </div>
+    <div
+      data-aos="fade-left"
+      data-aos-anchor-placement="center-bottom"
+      class="flex flex-col-reverse lg:flex-row justify-between gap-4">
+      <div
+        class="flex flex-col space-y-2 justify-center items-center lg:items-start px-10">
+        <h1 class="text-2xl font-semibold text-pink-500">
+          The best care for your Nails
+        </h1>
+        <p class="text-gray-600 font-medium text-xl">
+          Tipsy Nails is your nail care and beauty studio, dedicated to
+          providing you not only with exceptional service, but also with
+          comprehensive treatment to keep your nails strong and beautiful. In
+          each session, we use advanced techniques and high-quality natural
+          products that care for and beautify your hands. Our goal is to ensure
+          that every detail reflects both style and health, so you always have
+          perfect nails.
+        </p>
+      </div>
+      <img src={service1.src} alt="manicure services" class="p-2 h-full" />
+    </div>
+    <div
+      data-aos="fade-right"
+      data-aos-anchor-placement="center-bottom"
+      class="flex flex-col lg:flex-row justify-between gap-4">
+      <img
+        src={servicecard.src}
+        alt="manicure services"
+        slot="left"
+        class="p-2 h-full"
+      />
+      <div
+        class="flex flex-col space-y-2 justify-center items-center lg:items-start px-10">
+        <h1 class="text-2xl font-semibold text-pink-500">
+          Amazing designs! No joke!
+        </h1>
+        <p class="text-gray-600 font-medium text-xl">
+          Discover the Tipsy Nails collection of incredible designs that will
+          surprise you with their originality and creativity. From elegant and
+          minimalist patterns to bolder and more eye-catching styles, we have
+          something for everyone. Each design is a unique expression of art and
+          fashion, carefully crafted to highlight the beauty of your nails and
+          complement your personal style. Let us take your nails to the next
+          level with exclusive designs!
+        </p>
+        <button
+          class="p-2 border-2 border-pink-500 w-36 rounded-2xl text-lg font-semibold text-pink-500 hover:scale-105 hover:text-white hover:bg-pink-500 transition"
+          >Galery</button
+        >
+      </div>
+    </div>
+  </div>
+</section>
